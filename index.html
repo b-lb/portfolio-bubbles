@@ -18,11 +18,12 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#fff}
 <div id="field"></div>
 <script>
 const items=[
-{label:"Columbia University",img:"logos/columbia.png",size: 220},
+{label:"Columbia University",img:"logos/columbia.png",size:220},
 {label:"Reykjavík University",img:"logos/reykjavik.png",size:145},
 {label:"Product Club",img:"logos/product-club.png",size:155},
 {label:"Biomedical Engineering",img:"logos/biomedical.png",size:155},
-{label:"Travel",img:"logos/travel.png",size:250}
+{label:"Travel",img:"logos/travel.png",size:250},
+{label:"Me",img:"logos/me.png",size:200}
 ];
 const field=document.querySelector("#field"),reduced=matchMedia("(prefers-reduced-motion: reduce)").matches,speed=.33;
 let bubbles=[],active=null,lastTime=0;
