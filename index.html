@@ -68,7 +68,7 @@ if(b.y<b.r){b.y=b.r;b.vy=Math.abs(b.vy)}
 if(b.y>h-b.r){b.y=h-b.r;b.vy=-Math.abs(b.vy)}
 }
 for(let i=0;i<bubbles.length;i++)for(let j=i+1;j<bubbles.length;j++){
-const a=bubbles[i],b=bubbles[j],dx=b.x-a.x,dy=b.y-a.y,dist=Math.hypot(dx,dy)||.001,min=a.r+b.r+55;
+const a=bubbles[i],b=bubbles[j],dx=b.x-a.x,dy=b.y-a.y,dist=Math.hypot(dx,dy)||.001,min=a.r+b.r+75;
 if(dist<min){
 const nx=dx/dist,ny=dy/dist,push=(min-dist)/2;
 if(!a.drag&&!a.hover){a.x-=nx*push;a.y-=ny*push}
